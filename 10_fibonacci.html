@@ -8,12 +8,18 @@
     */
 
     //ENTRADA
-
+    const quantos = prompt(`Quantos numeros vc desenja add na sequencia de fibonacci?`)
+    let fibonacci = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
     
     //PROCESSAMENTO
-    
+    for (let index = 1; index <= quantos; index++) {
+        let ultimo = fibonacci.length-1
+        let penultimo = fibonacci.length-2
+        let sequencia = ultimo + penultimo
+        fibonacci.push(sequencia)
+    }
     
     //SAÍDA
-    
+    alert(`${fibonacci}`)
 
 </script>

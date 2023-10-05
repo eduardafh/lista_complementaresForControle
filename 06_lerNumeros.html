@@ -8,12 +8,21 @@
     */
 
     //ENTRADA
-
+    let listaDeNumeros = [4, 8, 12, 35, 78, 83, 5, 22, 49, 95];
+    let listaMenor = [];
+    let listaMaior = [];
     
     //PROCESSAMENTO
-    
-    
+    for (const num of listaDeNumeros) {
+        if(num < 50){
+            listaMenor.push(num)
+        }
+        else{
+            listaMaior.push(num)
+        }
+    }
+
     //SAÍDA
-    
+    alert (`Lista de nuemros menores de 50: ${listaMenor.join(", ")}\nLista maiores de 50: ${listaMaior.join(", ")}`)
 
 </script>

@@ -9,12 +9,27 @@
     */
 
     //ENTRADA
+    const quantidade = Number(prompt(`Quantos filmes vc deseja cadastrar?`))
+    let listaComedia = [];
+    let listaDrama = [];
+    let listaRomance = [];
 
-    
     //PROCESSAMENTO
-    
-    
+    for (let index = 1; index <= quantidade; index++) {
+        const filme = prompt(`Qual o filme?`).trim()
+        const tipo = prompt(`Qual o tipo do filme? C-Comedia - D-Drama - R-Romance `).trim().toUpperCase()
+        if (tipo == "C") {
+            listaComedia.push(filme)
+        }
+        if (tipo == "D") {
+            listaDrama.push(filme)
+        }
+        if (tipo == "R") {
+            listaRomance.push(filme)
+        }
+    }
+
     //SAÍDA
-    
-    
+    alert(`Lista Comedia: ${listaComedia.join(", ")}\nLista Drama: ${listaDrama.join(", ")}\nLista Romance: ${listaRomance.join(", ")}`)
+
 </script>
